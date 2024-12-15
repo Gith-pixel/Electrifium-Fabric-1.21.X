@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "electrifium:item/electrified_copper_ingot"
+  }
+}

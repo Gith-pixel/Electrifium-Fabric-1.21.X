@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "electrifium",
+	"version": "${version}",
+	"name": "Electrifium",
+	"description": "Makes Copper the Best Resource in Minecraft",
+	"authors": [
+		"Woolvex"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/TOBECHANGED",
+		"sources": "https://github.com/FabricMC/fabric-example-mod/TOBECHANGED"
+	},
+	"license": "MIT",
+	"icon": "assets/electrifium/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.woolvex.electrifium.Electrifium"
+		],
+		"fabric-datagen": [
+			"net.woolvex.electrifium.ElectrifiumDataGenerator"
+		],
+		"client": [
+			"net.woolvex.electrifium.ElectrifiumClient"
+		]
+	},
+	"mixins": [
+		"electrifium.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

@@ -1,0 +1,14 @@
+// 1.21	2024-12-15T18:25:18.3478222	Electrifium/Tags for minecraft:item
+659a1cbdba1093f4b75c8b08e99ea39825ac0b90 data\minecraft\tags\item\trim_templates.json
+c1bad9b20b3d71447cc2d95cc46b3a04e9071987 data\minecraft\tags\item\axes.json
+5f6cc9f6e4b331aa5eb2da907a396e63f4bd7471 data\minecraft\tags\item\trimmable_armor.json
+cf484a26ac9cc8f5bc9e6eb05692210f261fccb1 data\minecraft\tags\item\hoes.json
+a15b5623a9f04367d13606fd5fb5a8b6e6622de3 data\minecraft\tags\item\shovels.json
+088e7640a08007e0ccca55bb5af324c47b2d18e0 data\minecraft\tags\item\enchantable\head_armor.json
+5f6cc9f6e4b331aa5eb2da907a396e63f4bd7471 data\minecraft\tags\item\enchantable\armor.json
+dbd8fca742258651a2502b81c5369114f3fd809e data\minecraft\tags\item\swords.json
+38a7718fac7d03bda94395bead64acc7ff872a6e data\minecraft\tags\item\trim_materials.json
+813e70f9de8428825e57ac12a2712a122367b8e4 data\minecraft\tags\item\enchantable\chest_armor.json
+e808f0b9eae4eaebec430782b3deda3f5e7ede2c data\minecraft\tags\item\pickaxes.json
+0e52e603473be43a3084a6e010b936211583826a data\minecraft\tags\item\enchantable\foot_armor.json
+c8cb9e5cd80edc85cce5bfe7b1b1c413f3263384 data\minecraft\tags\item\enchantable\leg_armor.json

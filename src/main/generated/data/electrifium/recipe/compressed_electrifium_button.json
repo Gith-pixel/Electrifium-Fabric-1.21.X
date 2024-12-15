@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "electrifium:compressed_electrifium"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "electrifium:compressed_electrifium_button"
+  }
+}

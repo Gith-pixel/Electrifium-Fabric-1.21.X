@@ -1,0 +1,8 @@
+{
+  "asset_id": "electrifium:warned",
+  "decal": false,
+  "description": {
+    "translate": "trim_pattern.electrifium.warned"
+  },
+  "template_item": "electrifium:warned_armor_trim_smithing_template"
+}

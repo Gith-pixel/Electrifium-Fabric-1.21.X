@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:copper_ingot"
+    },
+    "B": {
+      "item": "electrifium:electrifium"
+    },
+    "C": {
+      "item": "minecraft:raw_copper"
+    },
+    "D": {
+      "item": "minecraft:netherite_ingot"
+    }
+  },
+  "pattern": [
+    "BBB",
+    "BDC",
+    "AAA"
+  ],
+  "result": {
+    "count": 1,
+    "id": "electrifium:electrified_copper_ingot"
+  }
+}

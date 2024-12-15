@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "electrifium:block/compressed_electrifium_slab"
+    },
+    "type=double": {
+      "model": "electrifium:block/compressed_electrifium"
+    },
+    "type=top": {
+      "model": "electrifium:block/compressed_electrifium_slab_top"
+    }
+  }
+}

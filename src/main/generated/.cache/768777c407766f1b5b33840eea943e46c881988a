@@ -1,0 +1,7 @@
+// 1.21	2024-12-15T18:25:18.3448176	Electrifium/Tags for minecraft:block
+62087c03a24cb10e409d284fd83489c2a9b8e4bd data\minecraft\tags\block\mineable\pickaxe.json
+cc8bf2b50846cfb5adc7fc3c1b6c19ca68bdd7fe data\minecraft\tags\block\walls.json
+3e5d6f7c630595c30d057ac6863ec67c1a97a34f data\minecraft\tags\block\fence_gates.json
+b20873c0bc334b1a7de37af2f474353e905de9b0 data\minecraft\tags\block\fences.json
+62087c03a24cb10e409d284fd83489c2a9b8e4bd data\minecraft\tags\block\needs_diamond_tool.json
+a249c46329a41538f49a564e1f14338aaf1be5a0 data\electrifium\tags\block\needs_electrified_copper_ingot_tool.json

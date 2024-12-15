@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "electrifium:item/electrified_copper_axe"
+  }
+}

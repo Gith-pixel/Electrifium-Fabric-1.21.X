@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 1.5001,
+  "group": "electrifium",
+  "ingredient": {
+    "item": "electrifium:electrifium_ore"
+  },
+  "result": {
+    "id": "electrifium:electrifium"
+  }
+}

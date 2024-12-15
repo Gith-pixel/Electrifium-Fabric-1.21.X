@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_electrifium_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": "electrifium:electrifium_ore"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:electrifium_from_blasting_electrifium_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_electrifium_ore"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:electrifium_from_blasting_electrifium_ore"
+    ]
+  }
+}
