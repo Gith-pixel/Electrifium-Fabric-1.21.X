@@ -139,7 +139,8 @@ public class Electrifium implements ModInitializer {
         });
 
 		FabricBrewingRecipeRegistryBuilder.BUILD.register(builder -> {
-			builder.registerPotionRecipe(Potions.AWKWARD, Items.SLIME_BALL, ModPotions.RADIATED_POTION);
+			builder.registerPotionRecipe(Potions.AWKWARD, ModItems.ELECTRIFIUM, ModPotions.RADIATED_POTION);
 		});
+
 	}
 }

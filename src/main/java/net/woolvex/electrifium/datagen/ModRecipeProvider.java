@@ -217,5 +217,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(recipeExporter, Identifier.of("electrified_copper_ingot_boots"));
 
         offerSmithingTrimRecipe(recipeExporter, ModItems.WARNED_SMITHING_TEMPLATE, Identifier.of(Electrifium.MOD_ID, "warned"));
+
     }
 }
