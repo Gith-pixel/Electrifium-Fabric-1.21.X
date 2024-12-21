@@ -3,7 +3,6 @@ package net.woolvex.electrifium;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.event.player.AttackEntityCallback;
 import net.fabricmc.fabric.api.event.player.UseItemCallback;
-import net.fabricmc.fabric.api.registry.FabricBrewingRecipeRegistryBuilder;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.mob.HostileEntity;
@@ -19,7 +18,6 @@ import net.woolvex.electrifium.item.ModArmorMaterials;
 import net.woolvex.electrifium.item.ModItemGroups;
 import net.woolvex.electrifium.item.ModItems;
 import net.woolvex.electrifium.block.ModBlocks;
-import net.woolvex.electrifium.potion.ModPotions;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -138,9 +136,6 @@ public class Electrifium implements ModInitializer {
             return TypedActionResult.pass(stack);
         });
 
-		FabricBrewingRecipeRegistryBuilder.BUILD.register(builder -> {
-			builder.registerPotionRecipe(Potions.AWKWARD, ModItems.ELECTRIFIUM, ModPotions.RADIATED_POTION);
-		});
 
 	}
 }
