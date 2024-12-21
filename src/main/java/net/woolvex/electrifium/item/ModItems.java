@@ -12,18 +12,23 @@ import net.woolvex.electrifium.item.custom.ModArmorItem;
 public class ModItems {
     public static final Item ELECTRIFIUM  = registerItems("electrifium", new Item(new Item.Settings()));
     public static final Item ELECTRIFIED_COPPER_INGOT  = registerItems("electrified_copper_ingot", new Item(new Item.Settings()));
+
     public static final Item ELECTRIFIED_COPPER_SWORD = registerItems("electrified_copper_sword",
             new SwordItem(ModToolMaterials.ELECTRIFIED_COPPER_INGOT, new Item.Settings()
                     .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.ELECTRIFIED_COPPER_INGOT, 4, -1.4F))));
+
     public static final Item ELECTRIFIED_COPPER_PICKAXE = registerItems("electrified_copper_pickaxe",
             new PickaxeItem(ModToolMaterials.ELECTRIFIED_COPPER_INGOT, new Item.Settings()
                     .attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.ELECTRIFIED_COPPER_INGOT, 2.5F, -2.0F))));
+
     public static final Item ELECTRIFIED_COPPER_SHOVEL = registerItems("electrified_copper_shovel",
             new ShovelItem(ModToolMaterials.ELECTRIFIED_COPPER_INGOT, new Item.Settings()
-                    .attributeModifiers(ShovelItem.createAttributeModifiers(ModToolMaterials.ELECTRIFIED_COPPER_INGOT, 2.0F, -1.8F))));
+                                        .attributeModifiers(ShovelItem.createAttributeModifiers(ModToolMaterials.ELECTRIFIED_COPPER_INGOT, 2.0F, -1.8F))));
+
     public static final Item ELECTRIFIED_COPPER_AXE = registerItems("electrified_copper_axe",
             new AxeItem(ModToolMaterials.ELECTRIFIED_COPPER_INGOT, new Item.Settings()
                     .attributeModifiers(AxeItem.createAttributeModifiers(ModToolMaterials.ELECTRIFIED_COPPER_INGOT, 6.0F, -2.0F))));
+
     public static final Item ELECTRIFIED_COPPER_HOE = registerItems("electrified_copper_hoe",
             new HoeItem(ModToolMaterials.ELECTRIFIED_COPPER_INGOT, new Item.Settings()
                     .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.ELECTRIFIED_COPPER_INGOT, 0.0F, 0.0F))));

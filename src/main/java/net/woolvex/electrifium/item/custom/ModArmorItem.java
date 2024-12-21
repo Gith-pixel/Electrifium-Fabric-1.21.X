@@ -32,6 +32,7 @@ public class ModArmorItem extends ArmorItem {
             if(entity instanceof PlayerEntity player) {
                 if(hasFullSuitOfArmorOn(player)) {
                     evaluateArmorEffects(player);
+
                 }
             }
         }
