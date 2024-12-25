@@ -1,7 +1,6 @@
 package net.woolvex.electrifium.item.custom;
 
 import com.google.common.collect.ImmutableMap;
-import net.woolvex.electrifium.item.ModArmorMaterials;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;

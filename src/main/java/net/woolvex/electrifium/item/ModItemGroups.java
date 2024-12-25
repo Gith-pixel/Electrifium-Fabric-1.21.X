@@ -45,7 +45,13 @@ public class ModItemGroups {
                         entries.add(ModItems.ELECTRIFIED_COPPER_LEGGINGS);
                         entries.add(ModItems.ELECTRIFIED_COPPER_BOOTS);
 
-                        entries.add(ModItems.WARNED_SMITHING_TEMPLATE);
+                       entries.add(ModItems.WOODEN_LONGSWORD);
+                        entries.add(ModItems.STONE_LONGSWORD);
+                        entries.add(ModItems.GOLDEN_LONGSWORD);
+                        entries.add(ModItems.IRON_LONGSWORD);
+                        entries.add(ModItems.DIAMOND_LONGSWORD);
+                        entries.add(ModItems.NETHERITE_LONGSWORD);
+                        entries.add(ModItems.ELECTRIFIED_COPPER_LONGSWORD);
 
                     }).build());
 

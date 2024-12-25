@@ -19,7 +19,15 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
 
         getOrCreateTagBuilder(ItemTags.SWORDS)
-                .add(ModItems.ELECTRIFIED_COPPER_SWORD);
+                .add(ModItems.ELECTRIFIED_COPPER_SWORD)
+                .add(ModItems.WOODEN_LONGSWORD)
+                .add(ModItems.STONE_LONGSWORD)
+                .add(ModItems.GOLDEN_LONGSWORD)
+                .add(ModItems.IRON_LONGSWORD)
+                .add(ModItems.DIAMOND_LONGSWORD)
+                .add(ModItems.NETHERITE_LONGSWORD)
+                .add(ModItems.ELECTRIFIED_COPPER_LONGSWORD);
+
         getOrCreateTagBuilder(ItemTags.PICKAXES)
                 .add(ModItems.ELECTRIFIED_COPPER_PICKAXE);
         getOrCreateTagBuilder(ItemTags.SHOVELS)
@@ -34,12 +42,6 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.ELECTRIFIED_COPPER_CHESTPLATE)
                 .add(ModItems.ELECTRIFIED_COPPER_LEGGINGS)
                 .add(ModItems.ELECTRIFIED_COPPER_BOOTS);
-
-        getOrCreateTagBuilder(ItemTags.TRIM_MATERIALS)
-                .add(ModItems.ELECTRIFIUM);
-
-        getOrCreateTagBuilder(ItemTags.TRIM_TEMPLATES)
-                .add(ModItems.WARNED_SMITHING_TEMPLATE);
 
         getOrCreateTagBuilder(ItemTags.ARMOR_ENCHANTABLE)
                 .add(ModItems.ELECTRIFIED_COPPER_HELMET)

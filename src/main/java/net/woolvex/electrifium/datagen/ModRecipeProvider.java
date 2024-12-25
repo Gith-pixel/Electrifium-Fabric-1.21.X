@@ -2,6 +2,7 @@ package net.woolvex.electrifium.datagen;
 
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.recipe.Ingredient;
+import net.minecraft.registry.tag.ItemTags;
 import net.minecraft.util.Identifier;
 import net.woolvex.electrifium.Electrifium;
 import net.woolvex.electrifium.item.ModItems;
@@ -14,6 +15,7 @@ import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
+import net.woolvex.electrifium.util.ModTags;
 
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
@@ -27,6 +29,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
     public void generate(RecipeExporter recipeExporter) {
         // Smelting and blasting recipes for electrifium ores
         List<ItemConvertible> ELECTRIFIUM_SMELTABLES = List.of(ModBlocks.ELECTRIFIUM_ORE, ModBlocks.DEEPSLATE_ELECTRIFIUM_ORE);
+
         offerSmelting(recipeExporter, ELECTRIFIUM_SMELTABLES, RecipeCategory.MISC, ModItems.ELECTRIFIUM, 1.5001f, 200, "electrifium");
         offerBlasting(recipeExporter, ELECTRIFIUM_SMELTABLES, RecipeCategory.MISC, ModItems.ELECTRIFIUM, 1.5001f, 100, "electrifium");
 
@@ -216,7 +219,70 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion("has_netherite_ingot", conditionsFromItem(Items.NETHERITE_INGOT))
                 .offerTo(recipeExporter, Identifier.of("electrified_copper_ingot_boots"));
 
-        offerSmithingTrimRecipe(recipeExporter, ModItems.WARNED_SMITHING_TEMPLATE, Identifier.of(Electrifium.MOD_ID, "warned"));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.WOODEN_LONGSWORD)
+                .pattern(" A ")
+                .pattern(" A ")
+                .pattern(" B ")
+                .input('A', ItemTags.PLANKS)
+                .input('B', Items.WOODEN_SWORD)
+                .criterion("has_wood", conditionsFromTag((ItemTags.PLANKS)))
+                .offerTo(recipeExporter, Identifier.of("wooden_longsword"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.STONE_LONGSWORD)
+                .pattern(" A ")
+                .pattern(" A ")
+                .pattern(" B ")
+                .input('A', Items.COBBLESTONE)
+                .input('B', Items.STONE_SWORD)
+                .criterion("has_stone", conditionsFromTag(ItemTags.STONE_TOOL_MATERIALS))
+                .offerTo(recipeExporter, Identifier.of("stone_longsword"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.GOLDEN_LONGSWORD)
+                .pattern(" A ")
+                .pattern(" A ")
+                .pattern(" B ")
+                .input('A', Items.GOLD_INGOT)
+                .input('B', Items.GOLDEN_SWORD)
+                .criterion("has_gold", conditionsFromItem(Items.GOLD_INGOT))
+                .offerTo(recipeExporter, Identifier.of("golden_longsword"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.IRON_LONGSWORD)
+                .pattern(" A ")
+                .pattern(" A ")
+                .pattern(" B ")
+                .input('A', Items.IRON_INGOT)
+                .input('B', Items.IRON_SWORD)
+                .criterion("has_iron", conditionsFromItem(Items.IRON_INGOT))
+                .offerTo(recipeExporter, Identifier.of("iron_longsword"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.DIAMOND_LONGSWORD)
+                .pattern(" A ")
+                .pattern(" A ")
+                .pattern(" B ")
+                .input('A', Items.DIAMOND)
+                .input('B', Items.DIAMOND_SWORD)
+                .criterion("has_diamond", conditionsFromItem(Items.DIAMOND))
+                .offerTo(recipeExporter, Identifier.of("diamond_longsword"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.NETHERITE_LONGSWORD)
+                .pattern(" A ")
+                .pattern(" C ")
+                .pattern(" B ")
+                .input('A', Items.NETHERITE_INGOT)
+                .input('C', Items.NETHERITE_SCRAP)
+                .input('B', Items.NETHERITE_SWORD)
+                .criterion("has_netherite", conditionsFromItem(Items.NETHERITE_INGOT))
+                .offerTo(recipeExporter, Identifier.of("netherite_longsword"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ELECTRIFIED_COPPER_LONGSWORD)
+                .pattern(" A ")
+                .pattern(" A ")
+                .pattern(" B ")
+                .input('A', ModItems.ELECTRIFIED_COPPER_INGOT)
+                .input('B', ModItems.ELECTRIFIED_COPPER_SWORD)
+                .criterion("has_electrified_copper_ingot", conditionsFromItem(ModItems.ELECTRIFIED_COPPER_INGOT))
+                .offerTo(recipeExporter, Identifier.of("electrified_copper_longsword"));
+
 
     }
 }

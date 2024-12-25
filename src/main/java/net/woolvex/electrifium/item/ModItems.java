@@ -1,6 +1,12 @@
 package net.woolvex.electrifium.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.minecraft.component.type.AttributeModifierSlot;
+import net.minecraft.component.type.AttributeModifiersComponent;
+import net.minecraft.entity.attribute.EntityAttribute;
+import net.minecraft.entity.attribute.EntityAttributeModifier;
+import net.minecraft.entity.attribute.EntityAttributes;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -15,7 +21,7 @@ public class ModItems {
 
     public static final Item ELECTRIFIED_COPPER_SWORD = registerItems("electrified_copper_sword",
             new SwordItem(ModToolMaterials.ELECTRIFIED_COPPER_INGOT, new Item.Settings()
-                    .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.ELECTRIFIED_COPPER_INGOT, 4, -1.4F))));
+                    .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.ELECTRIFIED_COPPER_INGOT, 20, -1.4F))));
 
     public static final Item ELECTRIFIED_COPPER_PICKAXE = registerItems("electrified_copper_pickaxe",
             new PickaxeItem(ModToolMaterials.ELECTRIFIED_COPPER_INGOT, new Item.Settings()
@@ -27,7 +33,7 @@ public class ModItems {
 
     public static final Item ELECTRIFIED_COPPER_AXE = registerItems("electrified_copper_axe",
             new AxeItem(ModToolMaterials.ELECTRIFIED_COPPER_INGOT, new Item.Settings()
-                    .attributeModifiers(AxeItem.createAttributeModifiers(ModToolMaterials.ELECTRIFIED_COPPER_INGOT, 6.0F, -2.0F))));
+                    .attributeModifiers(AxeItem.createAttributeModifiers(ModToolMaterials.ELECTRIFIED_COPPER_INGOT, 24.0F, -2.0F))));
 
     public static final Item ELECTRIFIED_COPPER_HOE = registerItems("electrified_copper_hoe",
             new HoeItem(ModToolMaterials.ELECTRIFIED_COPPER_INGOT, new Item.Settings()
@@ -49,8 +55,141 @@ public class ModItems {
             new ArmorItem(ModArmorMaterials.ELECTRIFIED_COPPER_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings()
                     .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(40))));
 
-    public static final Item WARNED_SMITHING_TEMPLATE = registerItems("warned_armor_trim_smithing_template",
-            SmithingTemplateItem.of(Identifier.of(Electrifium.MOD_ID, "warned"), FeatureFlags.VANILLA));
+    public static final Item WOODEN_LONGSWORD = registerItems("wooden_longsword",
+            new SwordItem(ToolMaterials.WOOD, new Item.Settings()
+                    .attributeModifiers(AttributeModifiersComponent.builder()
+                                    .add(EntityAttributes.GENERIC_ATTACK_DAMAGE,
+                                            new EntityAttributeModifier(Identifier.ofVanilla("player.generic_attack_damage")
+                                                    , 4.0, EntityAttributeModifier.Operation.ADD_VALUE), AttributeModifierSlot.ANY)
+                                    .add(EntityAttributes.GENERIC_ATTACK_SPEED,
+                                            new EntityAttributeModifier(Identifier.ofVanilla("player.generic_attack_speed")
+                                                    , -0.2, EntityAttributeModifier.Operation.ADD_VALUE), AttributeModifierSlot.ANY)
+                                    .add(EntityAttributes.PLAYER_ENTITY_INTERACTION_RANGE,
+                                            new EntityAttributeModifier(Identifier.ofVanilla("player.player_entity_interaction_range")
+                                                    , 2, EntityAttributeModifier.Operation.ADD_VALUE), AttributeModifierSlot.ANY)
+                                    .add(EntityAttributes.PLAYER_BLOCK_INTERACTION_RANGE,
+                                            new EntityAttributeModifier(Identifier.ofVanilla("player.player_block_interaction_range")
+                                                    , 2, EntityAttributeModifier.Operation.ADD_VALUE), AttributeModifierSlot.ANY)
+                                    .build()
+                    )
+            )
+    );
+
+
+    public static final Item STONE_LONGSWORD = registerItems("stone_longsword",
+            new SwordItem(ToolMaterials.STONE, new Item.Settings()
+                    .attributeModifiers(AttributeModifiersComponent.builder()
+                            .add(EntityAttributes.GENERIC_ATTACK_DAMAGE,
+                                    new EntityAttributeModifier(Identifier.ofVanilla("player.generic_attack_damage")
+                                            , 4.0, EntityAttributeModifier.Operation.ADD_VALUE), AttributeModifierSlot.ANY)
+                            .add(EntityAttributes.GENERIC_ATTACK_SPEED,
+                                    new EntityAttributeModifier(Identifier.ofVanilla("player.generic_attack_speed")
+                                            , -0.2, EntityAttributeModifier.Operation.ADD_VALUE), AttributeModifierSlot.ANY)
+                            .add(EntityAttributes.PLAYER_ENTITY_INTERACTION_RANGE,
+                                    new EntityAttributeModifier(Identifier.ofVanilla("player.player_entity_interaction_range")
+                                            , 2, EntityAttributeModifier.Operation.ADD_VALUE), AttributeModifierSlot.ANY)
+                            .add(EntityAttributes.PLAYER_BLOCK_INTERACTION_RANGE,
+                                    new EntityAttributeModifier(Identifier.ofVanilla("player.player_block_interaction_range")
+                                            , 2, EntityAttributeModifier.Operation.ADD_VALUE), AttributeModifierSlot.ANY)
+                            .build()
+                    )
+            ));
+
+    public static final Item GOLDEN_LONGSWORD = registerItems("golden_longsword",
+            new SwordItem(ToolMaterials.GOLD, new Item.Settings()
+                    .attributeModifiers(AttributeModifiersComponent.builder()
+                            .add(EntityAttributes.GENERIC_ATTACK_DAMAGE,
+                                    new EntityAttributeModifier(Identifier.ofVanilla("player.generic_attack_damage")
+                                            , 4.0, EntityAttributeModifier.Operation.ADD_VALUE), AttributeModifierSlot.ANY)
+                            .add(EntityAttributes.GENERIC_ATTACK_SPEED,
+                                    new EntityAttributeModifier(Identifier.ofVanilla("player.generic_attack_speed")
+                                            , -0.2, EntityAttributeModifier.Operation.ADD_VALUE), AttributeModifierSlot.ANY)
+                            .add(EntityAttributes.PLAYER_ENTITY_INTERACTION_RANGE,
+                                    new EntityAttributeModifier(Identifier.ofVanilla("player.player_entity_interaction_range")
+                                            , 2, EntityAttributeModifier.Operation.ADD_VALUE), AttributeModifierSlot.ANY)
+                            .add(EntityAttributes.PLAYER_BLOCK_INTERACTION_RANGE,
+                                    new EntityAttributeModifier(Identifier.ofVanilla("player.player_block_interaction_range")
+                                            , 2, EntityAttributeModifier.Operation.ADD_VALUE), AttributeModifierSlot.ANY)
+                            .build()
+                    )
+            ));
+
+    public static final Item IRON_LONGSWORD = registerItems("iron_longsword",
+            new SwordItem(ToolMaterials.IRON, new Item.Settings()
+                    .attributeModifiers(AttributeModifiersComponent.builder()
+                            .add(EntityAttributes.GENERIC_ATTACK_DAMAGE,
+                                    new EntityAttributeModifier(Identifier.ofVanilla("player.generic_attack_damage")
+                                            , 4.0, EntityAttributeModifier.Operation.ADD_VALUE), AttributeModifierSlot.ANY)
+                            .add(EntityAttributes.GENERIC_ATTACK_SPEED,
+                                    new EntityAttributeModifier(Identifier.ofVanilla("player.generic_attack_speed")
+                                            , -0.2, EntityAttributeModifier.Operation.ADD_VALUE), AttributeModifierSlot.ANY)
+                            .add(EntityAttributes.PLAYER_ENTITY_INTERACTION_RANGE,
+                                    new EntityAttributeModifier(Identifier.ofVanilla("player.player_entity_interaction_range")
+                                            , 2, EntityAttributeModifier.Operation.ADD_VALUE), AttributeModifierSlot.ANY)
+                            .add(EntityAttributes.PLAYER_BLOCK_INTERACTION_RANGE,
+                                    new EntityAttributeModifier(Identifier.ofVanilla("player.player_block_interaction_range")
+                                            , 2, EntityAttributeModifier.Operation.ADD_VALUE), AttributeModifierSlot.ANY)
+                            .build()
+                    )
+            ));
+
+    public static final Item DIAMOND_LONGSWORD = registerItems("diamond_longsword",
+            new SwordItem(ToolMaterials.DIAMOND, new Item.Settings()
+                    .attributeModifiers(AttributeModifiersComponent.builder()
+                            .add(EntityAttributes.GENERIC_ATTACK_DAMAGE,
+                                    new EntityAttributeModifier(Identifier.ofVanilla("player.generic_attack_damage")
+                                            , 4.0, EntityAttributeModifier.Operation.ADD_VALUE), AttributeModifierSlot.ANY)
+                            .add(EntityAttributes.GENERIC_ATTACK_SPEED,
+                                    new EntityAttributeModifier(Identifier.ofVanilla("player.generic_attack_speed")
+                                            , -0.2, EntityAttributeModifier.Operation.ADD_VALUE), AttributeModifierSlot.ANY)
+                            .add(EntityAttributes.PLAYER_ENTITY_INTERACTION_RANGE,
+                                    new EntityAttributeModifier(Identifier.ofVanilla("player.player_entity_interaction_range")
+                                            , 2, EntityAttributeModifier.Operation.ADD_VALUE), AttributeModifierSlot.ANY)
+                            .add(EntityAttributes.PLAYER_BLOCK_INTERACTION_RANGE,
+                                    new EntityAttributeModifier(Identifier.ofVanilla("player.player_block_interaction_range")
+                                            , 2, EntityAttributeModifier.Operation.ADD_VALUE), AttributeModifierSlot.ANY)
+                            .build()
+                    )
+            ));
+
+    public static final Item NETHERITE_LONGSWORD = registerItems("netherite_longsword",
+            new SwordItem(ToolMaterials.NETHERITE, new Item.Settings()
+                    .fireproof()
+                    .attributeModifiers(AttributeModifiersComponent.builder()
+                            .add(EntityAttributes.GENERIC_ATTACK_DAMAGE,
+                                    new EntityAttributeModifier(Identifier.ofVanilla("player.generic_attack_damage")
+                                            , 4.0, EntityAttributeModifier.Operation.ADD_VALUE), AttributeModifierSlot.ANY)
+                            .add(EntityAttributes.GENERIC_ATTACK_SPEED,
+                                    new EntityAttributeModifier(Identifier.ofVanilla("player.generic_attack_speed")
+                                            , -0.2, EntityAttributeModifier.Operation.ADD_VALUE), AttributeModifierSlot.ANY)
+                            .add(EntityAttributes.PLAYER_ENTITY_INTERACTION_RANGE,
+                                    new EntityAttributeModifier(Identifier.ofVanilla("player.player_entity_interaction_range")
+                                            , 2, EntityAttributeModifier.Operation.ADD_VALUE), AttributeModifierSlot.ANY)
+                            .add(EntityAttributes.PLAYER_BLOCK_INTERACTION_RANGE,
+                                    new EntityAttributeModifier(Identifier.ofVanilla("player.player_block_interaction_range")
+                                            , 2, EntityAttributeModifier.Operation.ADD_VALUE), AttributeModifierSlot.ANY)
+                            .build()
+                    )
+            ));
+
+    public static final Item ELECTRIFIED_COPPER_LONGSWORD = registerItems("electrified_copper_longsword",
+            new SwordItem(ModToolMaterials.ELECTRIFIED_COPPER_INGOT, new Item.Settings()
+                    .attributeModifiers(AttributeModifiersComponent.builder()
+                            .add(EntityAttributes.GENERIC_ATTACK_DAMAGE,
+                                    new EntityAttributeModifier(Identifier.ofVanilla("player.generic_attack_damage")
+                                            , 4.0, EntityAttributeModifier.Operation.ADD_VALUE), AttributeModifierSlot.ANY)
+                            .add(EntityAttributes.GENERIC_ATTACK_SPEED,
+                                    new EntityAttributeModifier(Identifier.ofVanilla("player.generic_attack_speed")
+                                            , -0.2, EntityAttributeModifier.Operation.ADD_VALUE), AttributeModifierSlot.ANY)
+                            .add(EntityAttributes.PLAYER_ENTITY_INTERACTION_RANGE,
+                                    new EntityAttributeModifier(Identifier.ofVanilla("player.player_entity_interaction_range")
+                                            , 2, EntityAttributeModifier.Operation.ADD_VALUE), AttributeModifierSlot.ANY)
+                            .add(EntityAttributes.PLAYER_BLOCK_INTERACTION_RANGE,
+                                    new EntityAttributeModifier(Identifier.ofVanilla("player.player_block_interaction_range")
+                                            , 2, EntityAttributeModifier.Operation.ADD_VALUE), AttributeModifierSlot.ANY)
+                            .build()
+                    )
+            ));
 
 
     private static Item registerItems(String name , Item item) {

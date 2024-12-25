@@ -1,12 +1,9 @@
 package net.woolvex.electrifium;
 
-import net.minecraft.registry.RegistryBuilder;
-import net.minecraft.registry.RegistryKeys;
 import net.woolvex.electrifium.datagen.*;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
-import net.woolvex.electrifium.trim.ModTrimMaterials;
-import net.woolvex.electrifium.trim.ModTrimPatterns;
+
 
 
 public class ElectrifiumDataGenerator implements DataGeneratorEntrypoint {
@@ -19,15 +16,7 @@ public class ElectrifiumDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(ModModelProvider::new);
 		pack.addProvider(ModRecipeProvider::new);
 		pack.addProvider(ModItemTagProvider::new);
-		pack.addProvider(ModRegistryDataGenerator::new);
-
-
 	}
 
-	@Override
-	public void buildRegistry(RegistryBuilder registryBuilder) {
-		registryBuilder.addRegistry(RegistryKeys.TRIM_MATERIAL, ModTrimMaterials::bootstrap);
-		registryBuilder.addRegistry(RegistryKeys.TRIM_PATTERN, ModTrimPatterns::bootstrap);
+}
 
-}
-}
