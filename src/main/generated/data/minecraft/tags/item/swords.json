@@ -1,5 +1,12 @@
 {
   "values": [
-    "electrifium:electrified_copper_sword"
+    "electrifium:electrified_copper_sword",
+    "electrifium:wooden_longsword",
+    "electrifium:stone_longsword",
+    "electrifium:golden_longsword",
+    "electrifium:iron_longsword",
+    "electrifium:diamond_longsword",
+    "electrifium:netherite_longsword",
+    "electrifium:electrified_copper_longsword"
   ]
 }

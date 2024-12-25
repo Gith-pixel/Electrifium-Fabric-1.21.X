@@ -426,6 +426,13 @@
   "potion.potency.124": "CXXV",
   "potion.potency.125": "CXXVI",
   "potion.potency.126": "CXXVII",
-  "potion.potency.127": "CXXVIII"
+  "potion.potency.127": "CXXVIII",
+
+  "item.minecraft.diamond_sword": "Diamond Dagger",
+  "item.minecraft.netherite_sword": "Netherite Dagger",
+  "item.minecraft.gold_sword": "Gold Dagger",
+  "item.minecraft.iron_sword": "Iron Dagger",
+  "item.minecraft.stone_sword": "Stone Dagger",
+  "item.minecraft.wooden_sword": "Wooden Dagger"
 
 }

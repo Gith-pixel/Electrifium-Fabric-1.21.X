@@ -29,7 +29,7 @@
 
   "block.electrifium.compressed_electrifium_trapdoor": "Compressed Electrifium Trapdoor",
 
-  "item.electrifium.electrified_copper_sword": "Electrified Copper Sword",
+  "item.electrifium.electrified_copper_sword": "Electrified Copper Dagger",
 
   "item.electrifium.electrified_copper_axe": "Electrified Copper Axe",
 
@@ -47,16 +47,17 @@
 
   "item.electrifium.electrified_copper_boots": "Electrified Copper Boots",
 
-  "item.electrifium.warned_armor_trim_smithing_template": "Smithing Template",
+  "item.electrifium.wooden_longsword": "Wooden Sword",
 
-  "trim_material.electrifium.electrifium": "Pink Garnet Material",
+  "item.electrifium.stone_longsword": "Stone Sword",
 
-  "trim_pattern.tutorialmod.warned": "Warned Armor Pattern",
+  "item.electrifium.iron_longsword": "Iron Sword",
 
-  "effect.electrifium.radiated": "Radiated",
+  "item.electrifium.golden_longsword": "Gold Sword",
 
-  "item.minecraft.potion.effect.radiated_potion": "Radiated Potion",
-  "item.minecraft.splash_potion.effect.radiated_potion": "Radiated Splash Potion",
-  "item.minecraft.lingering_potion.effect.radiated_potion": "Radiated Lingering Potion"
+  "item.electrifium.netherite_longsword": "Netherite Sword",
 
+  "item.electrifium.diamond_longsword": "Diamond Sword",
+
+  "item.electrifium.electrified_copper_longsword": "Electrified Copper Sword"
 }

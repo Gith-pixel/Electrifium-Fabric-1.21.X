@@ -34,6 +34,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerDoor(ModBlocks.COMPRESSED_ELECTRIFIUM_DOOR);
         blockStateModelGenerator.registerTrapdoor(ModBlocks.COMPRESSED_ELECTRIFIUM_TRAPDOOR);
 
+
     }
 
     @Override
@@ -51,7 +52,6 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.ELECTRIFIED_COPPER_LEGGINGS));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.ELECTRIFIED_COPPER_BOOTS));
 
-        itemModelGenerator.register(ModItems.WARNED_SMITHING_TEMPLATE, Models.HANDHELD);
 
 
 

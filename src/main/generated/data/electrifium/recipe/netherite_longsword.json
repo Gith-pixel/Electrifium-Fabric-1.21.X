@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "B": {
+      "item": "minecraft:netherite_sword"
+    },
+    "C": {
+      "item": "minecraft:netherite_scrap"
+    }
+  },
+  "pattern": [
+    " A ",
+    " C ",
+    " B "
+  ],
+  "result": {
+    "count": 1,
+    "id": "electrifium:netherite_longsword"
+  }
+}
